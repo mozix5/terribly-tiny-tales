@@ -35,15 +35,16 @@ const Profile = () => {
           backgroundSize: "cover",
         }}
       ></div>
-
-      <div className="flex justify-center gap-4 pr-6 relative -top-6">
-        <div className="rounded-full border-2 border-black h-32 w-32 ">
-          <img
-            src={data?.user_image}
-            className="object-cover rounded-full h-full w-full"
-            alt="User"
-          />
-        </div>
+      <div className="flex justify-center bg-fixed bg-slate-400">
+        <div className="border-2 w-[90%] bg-black overflow-x-scroll">
+          <div className="flex justify-center gap-4 pr-6 relative -top-6">
+            <div className="rounded-full border-2 border-black h-32 w-32 ">
+              <img
+                src={data?.user_image}
+                className="object-cover rounded-full h-full w-full"
+                alt="User"
+              />
+            </div>
 
         <div className="relative top-6">
           <div className="flex items-center gap-2">
@@ -75,8 +76,8 @@ const Profile = () => {
         </div>
       </div>
 
-      <div className="pl-10 mt-4 py-2">
-        <div>{data?.bio}</div>
+          <div className="pl-10 mt-1 pb-6">
+            <div>{data?.bio}</div>
 
         <a
           href={data?.insta_link}
