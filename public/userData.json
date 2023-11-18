@@ -1,0 +1,45 @@
+{
+    "user": {
+      "fullName":"mosin md",
+      "username": "mosinmd",
+      "background_url": "https://img.freepik.com/premium-photo/amazing-landscapes-view-mountain-with-gold-hour-sunrise-morning-2d-illustration_67092-2042.jpg?size=626&ext=jpg&ga=GA1.1.1880011253.1699660800&semt=ais",
+      "user_image":"https://e1.pxfuel.com/desktop-wallpaper/903/679/desktop-wallpaper-97-aesthetic-best-profile-pic-for-instagram-for-boy-instagram-dp-boys.jpg ",
+      "followers": 6484,
+      "following": 648,
+      "bio": "Co-founder & CEO at Terribly Tiny Tales",
+      "insta_link": "https://www.instagram.com/example_user/",
+      "stats": {
+        "stars": 125,
+        "likes": 12,
+        "views": "57.8k",
+        "hearts": "26.0k"
+      },
+      "posts": [
+        {
+          "title": "a changing world order",
+          "content": "The world is changing at a feverish pace. Friends, colleagues and everyone engaged in knowledge work are beginning to sense this, including ...",
+          "type":"musing",
+          "createdAt":"August 2",
+          "readAt":"2 mins",
+          "postViews":102
+        },
+        {
+            "title": "indian v/s australia",
+            "content": "Think about it - this cricket series was akin to therapy.Laying our childhood trauma up top, working with it slowly and surely over two m...",
+            "type":"thought",
+            "createdAt":"January 21",
+            "readAt":"1 min",
+            "postViews":156
+          },
+          {
+            "title": "write to build",
+            "content": "Writing is the first step to create: <br> -stories <br>-products <br>-companies",
+            "type":"thought",
+            "createdAt":"November 18",
+            "readAt":"1 min",
+            "postViews":228
+          }
+      ]
+    }
+  }
+  
