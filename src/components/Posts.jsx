@@ -11,7 +11,7 @@ const Posts = (props) => {
         </button>
       </div>
       <div className="py-8 sm:text-xl text-[#808080]">{props.content}</div>
-      <div className="flex justify-between text-sm py-2  text-[#808080]">
+      <div className="flex justify-between text-sm max-sm:text-xs py-2  text-[#808080]">
         <div className="flex gap-1 font-semibold items-center ">
           <div className=" text-blue-400">{props.type}</div>
           <div>by {props.userName}</div>
