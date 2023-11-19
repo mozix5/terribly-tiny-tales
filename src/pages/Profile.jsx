@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "../components/Navbar";
 import { Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
 import Posts from "../components/Posts";
 import { FaEye, FaRegHeart, FaRegStar } from "react-icons/fa";
@@ -10,9 +9,10 @@ import { TbDiamondFilled } from "react-icons/tb";
 const Profile = () => {
   const [data, setData] = useState(null);
 
+  // Function to fetch user data
   const fetchData = async () => {
     try {
-      const response = await fetch("userData.json"); // Adjust the path accordingly
+      const response = await fetch("userData.json");
       const data = await response.json();
       setData(data.user);
     } catch (error) {
@@ -20,14 +20,14 @@ const Profile = () => {
     }
   };
 
+  // Fetch user data on component mount
   useEffect(() => {
     fetchData();
   }, []);
 
   return (
     <div>
-      {/* <Navbar /> */}
-
+      {/* Background Image */}
       <div
         className="h-[33vh] xl:h-[40vh] w-full bg-no-repeat opacity-80 bg-fixed bg-cover"
         style={{
@@ -35,6 +35,8 @@ const Profile = () => {
           backgroundSize: "cover",
         }}
       ></div>
+
+      {/* User Info Section */}
       <div className="flex justify-center ">
         <div className="border-2 shadow-2xl lg:mb-6 lg:w-[75vw]">
           <div className="flex justify-center gap-4 pr-6 relative -top-8">
@@ -80,9 +82,9 @@ const Profile = () => {
             </div>
           </div>
 
+          {/* Bio and Stats Section */}
           <div className="pl-10 mt-1 pb-6 sm:text-xl  text-[#808080]">
             <div>{data?.bio}</div>
-
             <a
               href={data?.insta_link}
               target="_blank"
@@ -91,6 +93,7 @@ const Profile = () => {
               {data?.insta_link}
             </a>
 
+            {/* User Stats Section */}
             <div className="flex gap-3 items-center py-2">
               <div className="rounded-full bg-blue-300 p-1 text-white">
                 <FaRegStar />
@@ -114,6 +117,7 @@ const Profile = () => {
             </div>
           </div>
 
+          {/* Posts Section */}
           <div className="pt-4">
             <Tabs variant="enclosed-colored" colorScheme="yellow">
               <TabList>
@@ -121,7 +125,6 @@ const Profile = () => {
                   {data?.posts.length} Posts
                 </Tab>
               </TabList>
-
               <TabPanels>
                 <TabPanel>
                   {data?.posts.map((item, index) => (
