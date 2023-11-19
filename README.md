@@ -1,5 +1,9 @@
 # Terribly Tiny Tales Profile Page
 
+## Deployment
+
+The Terribly Tiny Tales Profile Page is deployed at [terribly-tiny-tales-sage.vercel.app](https://terribly-tiny-tales-sage.vercel.app).
+
 ## Overview
 
 This React application is designed to showcase a dynamic user profile page featuring posts and user statistics. The architecture is modular, comprising distinct components and pages that contribute to the overall structure and functionality.
