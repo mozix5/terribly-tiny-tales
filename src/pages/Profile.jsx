@@ -38,7 +38,7 @@ const Profile = () => {
 
       {/* User Info Section */}
       <div className="flex justify-center ">
-        <div className="border-2 shadow-2xl lg:mb-6 lg:w-[75vw]">
+        <div className="shadow-2xl lg:mb-6 lg:w-[75vw] rounded-xl">
           <div className="flex justify-center gap-4 pr-6 relative -top-8">
             <div className="rounded-full border-2 border-[#808080] h-36 w-36 shadow-2xl">
               <img
@@ -118,30 +118,28 @@ const Profile = () => {
           </div>
 
           {/* Posts Section */}
-          <div className="pt-4">
-            <Tabs variant="enclosed-colored" colorScheme="yellow">
-              <TabList>
-                <Tab fontWeight="bold" color="#2b8dd8" paddingX="20px">
-                  {data?.posts.length} Posts
-                </Tab>
-              </TabList>
-              <TabPanels>
-                <TabPanel>
-                  {data?.posts.map((item, index) => (
-                    <Posts
-                      key={index}
-                      userName={data?.username}
-                      title={item.title}
-                      content={item.content}
-                      type={item.type}
-                      createdAt={item.createdAt}
-                      readAt={item.readAt}
-                      views={item.postViews}
-                    />
-                  ))}
-                </TabPanel>
-              </TabPanels>
-            </Tabs>
+          <div className="flex py-4">
+            <div
+              className="font-bold text-center border-t-2 border-r-2 rounded-tr-lg w-36 pt-2 px-1 text-[#489ddd] text-lg cursor-pointer
+           "
+            >
+              {data?.posts.length} Posts
+            </div>
+            <div className="w-full border-b-2 border-l-2 rounded-bl-lg relative -bottom-2 -left-0.5"></div>
+          </div>
+          <div className=" px-4">
+            {data?.posts.map((item, index) => (
+              <Posts
+                key={index}
+                userName={data?.username}
+                title={item.title}
+                content={item.content}
+                type={item.type}
+                createdAt={item.createdAt}
+                readAt={item.readAt}
+                views={item.postViews}
+              />
+            ))}
           </div>
         </div>
       </div>
