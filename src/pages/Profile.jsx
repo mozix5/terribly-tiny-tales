@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
 import Posts from "../components/Posts";
 import { FaEye, FaRegHeart, FaRegStar } from "react-icons/fa";
 import { LuThumbsUp } from "react-icons/lu";
@@ -29,7 +28,7 @@ const Profile = () => {
     <div>
       {/* Background Image */}
       <div
-        className="h-[33vh] xl:h-[40vh] w-full bg-no-repeat opacity-80 bg-fixed bg-cover"
+        className="h-[30vh] xl:h-[40vh] w-full bg-no-repeat opacity-90 bg-fixed bg-cover"
         style={{
           backgroundImage: `url(${data?.background_url})`,
           backgroundSize: "cover",
