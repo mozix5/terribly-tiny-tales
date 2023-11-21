@@ -27,13 +27,17 @@ const Profile = () => {
   return (
     <div>
       {/* Background Image */}
-      <div
-        className="h-[30vh] xl:h-[40vh] w-full bg-no-repeat opacity-90 bg-fixed bg-cover"
-        style={{
-          backgroundImage: `url(${data?.background_url})`,
-          backgroundSize: "cover",
-        }}
-      ></div>
+      <div className="h-[30vh] xl:h-[40vh] xl:w-[80vw] mx-auto ">
+        <div
+          className="h-full w-full bg-no-repeat opacity-90 bg-fixed bg-cover"
+          style={{
+            backgroundImage: `url(${data?.background_url})`,
+            backgroundPosition: "center 64px",
+            backgroundSize: "100% 45%",
+            // backgroundSize: "contain",
+          }}
+        ></div>
+      </div>
 
       {/* User Info Section */}
       <div className="flex justify-center ">
